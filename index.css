@@ -1,19 +1,48 @@
-*{
-  margin: 0;
-  top: 0;
-}
-body{
-  background: linear-gradient(rgb(62, 63, 62), rgb(00, 00, 00));
-}
-
-
-label,input{
-  font-size: 20px;
-  font-family: "ALGERIAN";
-  color: "white";
-  margin: 10px;
-  padding: 5px;
-}
-form{
-  background-color: rgb(241, 241, 241);
-}
+*{  color:white;
+    margin: 0;
+    top: 0;
+  }
+  body{
+    background: linear-gradient(rgb(62, 63, 62), rgb(00, 00, 00));
+  }
+  
+  
+  label,input,button{
+    font-size: 20px;
+    font-family: "ALGERIAN";
+    color: rgb(236, 233, 233);
+    margin: 10px;
+    padding: 5px;
+  }
+  input{
+      background-color: teal;
+  }
+  form{
+    background-color: rgb(0, 0, 0);
+  }
+  p,h3{
+    font-family: "CENTURY";
+    font-size: 5.5vmax;
+    color: white;
+  }
+  h2{
+    font-family: "ALGERIAN";
+    font-size: 10.5vmax;
+    color: blue;
+  }
+  h1,h5{
+    font-family: "ALGERIAN";
+    font-size: 9vmax;
+    color: brown;
+  }
+  #names{
+    font-family: "ALGERIAN";
+    font-size: 5vmax;
+    color: brown;
+    text-align: centre; 
+  }
+  .info,li{
+    font-family: "century";
+    font-size: 3vmax;
+    color: white;
+  }

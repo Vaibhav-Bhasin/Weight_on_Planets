@@ -1,1 +1,187 @@
+<html>
 
+<head>
+    <title>Weight On Different Planets</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <script defer SRC='./app.js'></script>
+    <script>MathJax.Hub.Config({ tex2jax: { inlineMath: [['$', '$'], ['\\(', '\\)']] } })</script>
+</head>
+
+<body>
+    <div id="particles-js"></div> 
+    <img src="https://github.com/Vaibhav-Bhasin/Weight_on_Planets/blob/main/POTFUGER.jpeg?raw=true"
+        style="width:50px; height: auto;">
+        <p>
+
+        <h2 align=" center">
+    YOUR WEIGHT ON OTHER PLANETS
+    </h2>
+
+    </p>
+
+    <div id="info">
+        <p>TO DO & NOTICE:</p>
+        <ol>
+            <li>Fill in your weight below in the space indicated. You can enter your weight in any unit you wish.
+            </li>
+            <li>Click on the "Calculate" button.</li>
+            <li>Notice that the weights on other worlds will automatically fill in.</li>
+            <li>Notice that your weight is different on the different planets.</li>
+            <p>
+    </div>
+
+    <br>
+
+    <h3>The Formula is</h3>
+    <h5 id="formula">$$ Weight\space on\space a\space planet\space = {(Weight\space on\space the\space Earth\space ×
+        force\space of\space a\space planet) \over 9.8}$$ </h5>
+    <h6>Example:</h6>
+    <h6><br>$$ Weight\space on\space Mars\space = {(54 × 3.75) \over 9.8} = 20.448367346938774\space kg $$</h6>
+    <br>
+
+    <center>
+        <form onsubmit="return false">
+            <label>Weight: </label>
+            <input type="text" name="weight" id="weight">
+            <br>
+            <label>Planet: </label>
+            <input list="planets" name="planets" id="planetname">
+            <datalist id="planets">
+                <option value="Mercury"></option>
+                <option value="Venus"></option>
+                <option value="Earth"></option>
+                <option value="Mars"></option>
+                <option value="Jupiter"></option>
+                <option value="Saturn"></option>
+                <option value="Uranus"></option>
+                <option value="Neptune"></option>
+            </datalist>
+            <br>
+            <input type="submit" value="Calculate" onclick="run()"/>
+        </form>
+    </center>
+    <br>
+    <br>
+    <p id="result"></p>
+    <div id="empty"></div>
+    <hr>
+    <br>
+
+    <h1 align="center">
+        THE PLANETS
+    </h1>
+
+    </p>
+    <div id="banner" style="overflow: hidden; display: flex; justify-content:space-around;">
+        <img src="https://www.exploratorium.edu/ronh/weight/images/mercury.gif" alt="Mercury">
+
+        <h3>MERCURY G-FORCE = 3.7m/s2</h3>
+        <img src="https://www.exploratorium.edu/ronh/weight/images/venus.gif" alt="Venus">
+        <h3>VENUS G-FORCE = 8.87m/s2</h3>
+        <img src="https://www.exploratorium.edu/ronh/weight/images/mars.gif" alt="Mars">
+        <h3>MARS G-FORCE = 3.711m/s2</h3>
+        <img src="https://www.exploratorium.edu/ronh/weight/images/jupiter.gif" alt="Jupiter" />
+    </div>
+    <div id="banner" style="overflow: hidden; display: flex; justify-content:space-around;">
+        <h3>JUPITER G-FORCE = 24.79m/s2</h3>
+        <img src="https://www.exploratorium.edu/ronh/weight/images/saturn.gif" alt="Satrun">
+        <h3>SATRUN G-FORCE = 10.44m/s2</h3>
+        <img src="https://www.exploratorium.edu/ronh/weight/images/uranus.gif" alt="Uranus">
+        <h3>URANUS G-FORCE = 8.69m/s2</h3>
+        <img src="https://www.exploratorium.edu/ronh/weight/images/neptune.gif" alt="Neptune">
+        <h3>NEPTUNE G-FORCE = 11.15m/s2</h3>
+    </div>
+        <h3>DRAWF PLANET "PLUTO"</h3>
+
+
+
+        <img src="https://github.com/Vaibhav-Bhasin/Weight_on_Planets/blob/main/Pluto.jpg?raw=true" alt="Pluto">
+
+        <h3>PLUTO G-FORCE=0.059</h3>
+    
+
+    <h1 align="center">
+        THE MOONS OF JUPITER
+    </h1>
+
+
+    <img src="https://github.com/Vaibhav-Bhasin/Weight_on_Planets/blob/main/IO.jpg?raw=true" alt="IO">
+    <h3>IO G-FORCE=0.183</h3>
+    <img src="https://github.com/Vaibhav-Bhasin/Weight_on_Planets/blob/main/JUPITER%20MOON.jpg?raw=true" alt="">
+    <h3>EUROPA G-FORCE=10</h3>
+    <img src="https://github.com/Vaibhav-Bhasin/Weight_on_Planets/blob/main/GANYMEDE.jpg?raw=true" alt="GANYMEDE">
+    <h3>GANYMEDE G-FORCE=0.146</h3>
+    <img src="https://raw.githubusercontent.com/Vaibhav-Bhasin/Weight_on_Planets/main/CALLISTO.webp" alt="CALLISTO">
+    <h3>CALLISTO G-FORCE=0.126</h3>
+    <p>
+
+
+    <h5 align="center">
+        A TYPE OF DIFFERENT STARS
+    </h5 </p>
+
+    <img src="https://github.com/Vaibhav-Bhasin/Weight_on_Planets/blob/main/SUN.jpg?raw=true" alt="SUN">
+    <h3>SUN G-FORCE=28.02</h3>
+    <img src="https://github.com/Vaibhav-Bhasin/Weight_on_Planets/blob/main/WHITE.png?raw=true" alt="A WHITE DRAWF">
+    <h3>A WHITE DRAWF G-FORCE=68</h3>
+    <img src="https://github.com/Vaibhav-Bhasin/Weight_on_Planets/blob/main/STAR.jpg?raw=true" alt="A NEUTRON STAR">
+    <h3>A NEUTRON STAR G-FORCE=200000000000</h3>
+
+
+    <p>Mass and Weight</p>
+    <p>Before we get into the subject of gravity and how it acts, it's important to understand the
+        difference between weight and mass.
+
+        We often use the terms "mass" and "weight" interchangeably in our daily speech, but to an astronomer
+        or a physicist they are completely different things. The mass of a body is a measure of how much
+        matter it contains. An object with mass has a quality called inertia. If you shake an object like a
+        stone in your hand, you would notice that it takes a push to get it moving, and another push to stop
+        it again. If the stone is at rest, it wants to remain at rest. Once you've got it moving, it wants
+        to stay moving. This quality or "sluggishness" of matter is its inertia. Mass is a measure of how
+        much inertia an object displays.
+
+        Weight is an entirely different thing. Every object in the universe with mass attracts every other
+        object with mass. The amount of attraction depends on the size of the masses and how far apart they
+        are. For everyday-sized objects, this gravitational pull is vanishingly small, but the pull between
+        a very large object, like the Earth, and another object, like you, can be easily measured. How? All
+        you have to do is stand on a scale! Scales measure the force of attraction between you and the
+        Earth. This force of attraction between you and the Earth (or any other planet) is called your
+        weight.
+
+        If you are in a spaceship far between the stars and you put a scale underneath you, the scale would
+        read zero. Your weight is zero. You are weightless. There is an anvil floating next to you. It's
+        also weightless. Are you or the anvil mass-less? Absolutely not. If you grabbed the anvil and tried
+        to shake it, you would have to push it to get it going and pull it to get it to stop. It still has
+        inertia, and hence mass, yet it has no weight. See the difference?
+
+        The Relationship Between Gravity and Mass and Distance
+        As stated above, your weight is a measure of the pull of gravity between you and the body you are
+        standing on. This force of gravity depends on a few things. First, it depends on your mass and the
+        mass of the planet you are standing on. If you double your mass, gravity pulls on you twice as hard.
+        If the planet you are standing on is twice as massive, gravity also pulls on you twice as hard. On
+        the other hand, the farther you are from the center of the planet, the weaker the pull between the
+        planet and your body. The force gets weaker quite rapidly. If you double your distance from the
+        planet, the force is one-fourth. If you triple your separation, the force drops to one-ninth. Ten
+        times the distance, one-hundredth the force. See the pattern? The force drops off with the square of
+        the distance. If we put this into an equation it would look like this:
+
+    <p>Math equation</p>
+    <p>Equations are guides to thinking
+        The two "M's" on top are your mass and the planet's mass. The "r" below is the distance from the
+        center of the planet. The masses are in the numerator because the force gets bigger if they get
+        bigger. The distance is in the denominator because the force gets smaller when the distance gets
+        bigger. Note that the force never becomes zero no matter how far you travel. Perhaps this was the
+        inspiration for the poem by Francis Thompson:
+
+    </p>
+
+
+
+    <script src="./particles.js"> 
+    </script>
+    <script src="./particlesapp.js">
+    </script>
+</body>
+
+</html>
